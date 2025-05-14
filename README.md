@@ -139,14 +139,14 @@ Exploratory and descriptive analytics<br>
 <br>
 Business-focused query development<br>
 <br>
-<b></b>The insights generated offer a deeper understanding of:</b><br>
+<b>The insights generated offer a deeper understanding of:</b><br>
 <br>
 Customer behavior<br>
 <br>
 Regional and seasonal sales patterns<br>
-
+<br>
 Top products and stores<br>
-
+<br>
 Year-over-year comparisons<br>
 <br>
 <h2>💻 Tools & Technologies</h2>
