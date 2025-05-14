@@ -18,111 +18,93 @@ Use SQL queries to answer real-world business questions and uncover actionable i
 <h3>1. 📦 Database Setup</h3>
 <h4>Database Creation</h4>
 <br>
-sql query
-CREATE DATABASE electronics_sales;
-Table Creation<br>
+sql query:<br>
+CREATE DATABASE electronics_sales;<br>
+<br>
+<h4>Table Creation</h4>
 Two tables: sales_2023 and sales_2024, structured as follows:
 <br>
-sql
-Copy
-Edit
-CREATE TABLE sales_2023 (
-  sale_ID INT AUTO_INCREMENT PRIMARY KEY,
-  product_id INT NOT NULL,
-  product_name VARCHAR(50) NOT NULL,
-  category VARCHAR(50) NOT NULL,
-  brand VARCHAR(50) NOT NULL,
-  customer_ID INT NOT NULL,
-  customer_name VARCHAR(50) NOT NULL,
-  sale_date DATE NOT NULL,
-  sale_amount INT NOT NULL,
-  sale_quantity INT DEFAULT 1 NOT NULL,
-  discount INT NOT NULL,
-  payment_method VARCHAR(50) NOT NULL,
-  region VARCHAR(50) NOT NULL,
-  store VARCHAR(50) NOT NULL,
-  profit INT NOT NULL
-);
-Same structure for sales_2024
 <br>
-2. 🧹 Data Exploration & Cleaning
-Record Count
+sql query:<br>
+CREATE TABLE sales_2023 (<br>
+  sale_ID INT AUTO_INCREMENT PRIMARY KEY,<br>
+  product_id INT NOT NULL,<br>
+  product_name VARCHAR(50) NOT NULL,<br>
+  category VARCHAR(50) NOT NULL,<br>
+  brand VARCHAR(50) NOT NULL,<br>
+  customer_ID INT NOT NULL,<br>
+  customer_name VARCHAR(50) NOT NULL,<br>
+  sale_date DATE NOT NULL,<br>
+  sale_amount INT NOT NULL,<br>
+  sale_quantity INT DEFAULT 1 NOT NULL,<br>
+  discount INT NOT NULL,<br>
+  payment_method VARCHAR(50) NOT NULL,<br>
+  region VARCHAR(50) NOT NULL,<br>
+  store VARCHAR(50) NOT NULL,<br>
+  profit INT NOT NULL<br>
+);<br>
+<h5>Same structure for sales_2024</h5>
 <br>
-sql
-Copy
-Edit
-SELECT COUNT(*) FROM sales_2023;
-Unique Customers
+<h3>2. 🧹 Data Exploration & Cleaning</h3>
+<h4>Record Count</h4>
 <br>
-sql
-Copy
-Edit
-SELECT COUNT(DISTINCT customer_ID) FROM sales_2023;
-Category Count
+sql query:<br>
+SELECT COUNT(*) FROM sales_2023;<br>
+Unique Customers<br>
 <br>
-sql
-Copy
-Edit
-SELECT COUNT(DISTINCT category) FROM sales_2023;
-Null Value Check and Deletion
+sql query:<br>
+SELECT COUNT(DISTINCT customer_ID) FROM sales_2023;<br>
+Category Count<br>
 <br>
-sql
-Copy
-Edit
-SELECT * FROM sales_2023
-WHERE product_id IS NULL OR product_name IS NULL OR category IS NULL OR brand IS NULL
-  OR customer_ID IS NULL OR customer_name IS NULL OR sale_date IS NULL
-  OR sale_amount IS NULL OR sale_quantity IS NULL OR discount IS NULL
-  OR payment_method IS NULL OR region IS NULL OR store IS NULL OR profit IS NULL;
-sql
-Copy
-Edit
-DELETE FROM sales_2023
-WHERE product_id IS NULL OR product_name IS NULL OR category IS NULL OR brand IS NULL
-  OR customer_ID IS NULL OR customer_name IS NULL OR sale_date IS NULL
-  OR sale_amount IS NULL OR sale_quantity IS NULL OR discount IS NULL
-  OR payment_method IS NULL OR region IS NULL OR store IS NULL OR profit IS NULL;
+sql query:<br>
+SELECT COUNT(DISTINCT category) FROM sales_2023;<br>
+Null Value Check and Deletion<br>
 <br>
-Repeat for sales_2024
+sql query:<br>
+SELECT * FROM sales_2023<br>
+WHERE product_id IS NULL OR product_name IS NULL OR category IS NULL OR brand IS NULL<br>
+  OR customer_ID IS NULL OR customer_name IS NULL OR sale_date IS NULL<br>
+  OR sale_amount IS NULL OR sale_quantity IS NULL OR discount IS NULL<br>
+  OR payment_method IS NULL OR region IS NULL OR store IS NULL OR profit IS NULL;<br>
+sql query:<br>
+DELETE FROM sales_2023<br>
+WHERE product_id IS NULL OR product_name IS NULL OR category IS NULL OR brand IS NULL<br>
+  OR customer_ID IS NULL OR customer_name IS NULL OR sale_date IS NULL<br>
+  OR sale_amount IS NULL OR sale_quantity IS NULL OR discount IS NULL<br>
+  OR payment_method IS NULL OR region IS NULL OR store IS NULL OR profit IS NULL;<br>
 <br>
-4. 📊 Data Analysis & Insights
+<h5>Repeat for sales_2024</h5>
+<br>
+<h3>4. 📊 Data Analysis & Insights</h3>
 The following SQL queries address 30 business-focused questions using the data:
 <br>
-📌 Sample Questions:
+<h4>📌 Sample Questions:</h4>
 Combine sales data from 2023 and 2024
 <br>
-sql
-Copy
-Edit
-SELECT * FROM sales_2023
-UNION
-SELECT * FROM sales_2024;
-Total profit and sales amount by year
+sql query:
+SELECT * FROM sales_2023<br>
+UNION<br>
+SELECT * FROM sales_2024;<br>
+Total profit and sales amount by year<br>
 <br>
-sql
-Copy
-Edit
-SELECT SUM(profit) FROM sales_2023;
-SELECT SUM(sale_amount) FROM sales_2023;
--- Repeat for sales_2024
-Sales quantity by brand
+sql query:
+SELECT SUM(profit) FROM sales_2023;<br>
+SELECT SUM(sale_amount) FROM sales_2023;<br>
+-- Repeat for sales_2024<br>
+Sales quantity by brand<br>
 <br>
-sql
-Copy
-Edit
-SELECT brand, SUM(sale_quantity) FROM sales_2023 GROUP BY brand;
-Top-selling product
+sql query:
+SELECT brand, SUM(sale_quantity) FROM sales_2023 GROUP BY brand;<br>
+Top-selling product<br>
 <br>
-sql
-Copy
-Edit
-SELECT product_name, SUM(sale_quantity)
-FROM sales_2023
-GROUP BY product_name
-ORDER BY SUM(sale_quantity) DESC
-LIMIT 1;
-Sales trends, regions, stores, and customers analysis includes:
-Monthly and quarterly breakdowns<br>
+sql query:
+SELECT product_name, SUM(sale_quantity)<br>
+FROM sales_2023<br>
+GROUP BY product_name<br>
+ORDER BY SUM(sale_quantity) DESC<br>
+LIMIT 1;<br>
+Sales trends, regions, stores, and customers analysis includes:<br>
+Monthly and quarterly breakdowns<br><br>
 <br>
 Regional sales performance<br>
 <br>
