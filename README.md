@@ -19,10 +19,10 @@ Use SQL queries to answer real-world business questions and uncover actionable i
 <h3>1. 📦 Database Setup</h3>
 
 <h4>Database Creation</h4>
-<i>sql query:</i><br>
-CREATE DATABASE electronics_sales;<br>
-<br>
-
+<pre> '''
+CREATE DATABASE electronics_sales;
+'''</pre> 
+  
 <h4>Table Creation</h4>
 Two tables: sales_2023 and sales_2024, structured as follows:
 
@@ -173,4 +173,4 @@ MySQL Workbench<br>
 
 <h2>👨‍💻 Author</h2>
 Iqra Izhar<br>
-GitHub (https://github.com/iqraizhar72/) • LinkedIn (https://www.linkedin.com/in/iqra-izhar-08b8b8330/)
+[GitHub] (https://github.com/iqraizhar72/) • [LinkedIn] (https://www.linkedin.com/in/iqra-izhar-08b8b8330/)
