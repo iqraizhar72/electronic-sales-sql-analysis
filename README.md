@@ -82,27 +82,22 @@ The following SQL queries address 30 business-focused questions using the data:
 
 <b>Combine sales data from 2023 and 2024</b>
 <br>
-<br>
 <i>sql query:</i><br>
 SELECT * FROM sales_2023<br>
 UNION<br>
 SELECT * FROM sales_2024;<br>
 <br>
 <b>Total profit and sales amount by year</b><br>
-<br>
 <i>sql query:</i><br>
 SELECT SUM(profit) FROM sales_2023;<br>
 SELECT SUM(sale_amount) FROM sales_2023;<br>
 -- Repeat for sales_2024<br>
 <br>
 <b>Sales quantity by brand</b><br>
-
-<br>
 <i>sql query:</i><br>
 SELECT brand, SUM(sale_quantity) FROM sales_2023 GROUP BY brand;<br>
 <br>
-<b>Top-selling product</b><br>
-
+<b>Top-selling product</b>
 <br>
 <i>sql query:</i><br>
 SELECT product_name, SUM(sale_quantity)<br>
@@ -112,6 +107,7 @@ ORDER BY SUM(sale_quantity) DESC<br>
 LIMIT 1;<br>
 <br>
 <h4>Sales trends, regions, stores, and customers analysis includes:</h4>
+<br>
 Monthly and quarterly breakdowns<br>
 <br>
 Regional sales performance<br>
