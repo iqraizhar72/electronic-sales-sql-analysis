@@ -62,7 +62,62 @@ profit
 <h3>3. Data Analysis & Findings</h3>
 <br> 
 <br>
+1. Retrieve all sales records from 2023 and 2024 combined.
+2. Find the total profit for each table.
+3. Find the total sales amount for each table.
+4. Calculate the total sales quantity for each product brand.
+5. List all unique product categories in the dataset.
+6. Identify the payment methods used and the count of transactions for each.
+7. Find the average sales amount and total sales quantity for each region.
+8. Calculate the maximum discount offered in both years.
+9. Determine the product with the highest sales quantity in 2023.
+10. Compare the total sales amount between 2023 and 2024 for each category.
+11. List the top 3 stores with the highest total sales in 2024.
+12. Retrieve sales records where the discount is greater than 10%.
+13. Find regions where the average sales amount exceeds 500.
+14. Get a list of categories with total sales greater than 1000, grouped by year.
+15. Identify products sold in more than three regions.
+16. Retrieve customers with total sales of over 1000, using HAVING.
+17. List sales records from 2024 that occurred in the first quarter (Jan–Mar).
+18. Find the monthly sales trends for both years:
+19. Calculate the total sales for each year grouped by quarters:
+20. Identify the days with the highest sales amount in each year:
+21. Compare the total sales for the same month in 2023 and 2024:
+22. Combine data from both tables and list the total sales for each product:
+23. Find customers who made purchases in both years:
+24. Identify products that were sold in 2023 but not in 2024:
+25. Retrieve the details of stores that had sales in both years:
+26. Create a union of both tables and list the distinct products sold:
+27. Use DISTINCT to find unique customer names across both years:
+28. Use CASE to classify sales as "High", "Medium", or "Low" based on the sales amount:
+29. Use LIMIT or TOP to fetch the top 10 customers by total sales amount:
+30. List all customers who purchased only in 2023 but not in 2024.
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+
+
+
+
+
+
+
+
+
+  
 <br>
 <br>
 <h2>Conclusion</h2>
