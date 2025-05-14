@@ -111,8 +111,7 @@ GROUP BY product_name<br>
 ORDER BY SUM(sale_quantity) DESC<br>
 LIMIT 1;<br>
 <br>
-<h4>Sales trends, regions, stores, and customers analysis includes:</h4><br>
-<br>
+<h4>Sales trends, regions, stores, and customers analysis includes:</h4>
 Monthly and quarterly breakdowns<br>
 <br>
 Regional sales performance<br>
