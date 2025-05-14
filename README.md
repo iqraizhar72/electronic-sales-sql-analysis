@@ -44,15 +44,18 @@ CREATE TABLE sales_2023 (<br>
 <br>
 <i>sql query:</i><br>
 SELECT COUNT(*) FROM sales_2023;<br>
-Unique Customers<br>
+<br>
+<h4>Unique Customers</h4>
 <br>
 <i>sql query:</i><br>
 SELECT COUNT(DISTINCT customer_ID) FROM sales_2023;<br>
-Category Count<br>
+<br>
+<h4>Category Count</h4>
 <br>
 <i>sql query:</i><br>
 SELECT COUNT(DISTINCT category) FROM sales_2023;<br>
-Null Value Check and Deletion<br>
+<br>
+<h4>Null Value Check and Deletion</h4>
 <br>
 <i>sql query:</i><br>
 SELECT * FROM sales_2023<br>
@@ -75,29 +78,28 @@ The following SQL queries address 30 business-focused questions using the data:
 <br>
 <h4>📌 Sample Questions:</h4>
 
-Combine sales data from 2023 and 2024
+<b>Combine sales data from 2023 and 2024</b>
 <br>
 <br>
 <i>sql query:</i><br>
 SELECT * FROM sales_2023<br>
 UNION<br>
 SELECT * FROM sales_2024;<br>
-
-Total profit and sales amount by year<br>
-
+<br>
+<b>Total profit and sales amount by year</b><br>
 <br>
 <i>sql query:</i><br>
 SELECT SUM(profit) FROM sales_2023;<br>
 SELECT SUM(sale_amount) FROM sales_2023;<br>
 -- Repeat for sales_2024<br>
 <br>
-Sales quantity by brand<br>
+<b>Sales quantity by brand</b><br>
 
 <br>
 <i>sql query:</i><br>
 SELECT brand, SUM(sale_quantity) FROM sales_2023 GROUP BY brand;<br>
 <br>
-Top-selling product<br>
+<b>Top-selling product</b><br>
 
 <br>
 <i>sql query:</i><br>
@@ -108,7 +110,8 @@ ORDER BY SUM(sale_quantity) DESC<br>
 LIMIT 1;<br>
 <br>
 Sales trends, regions, stores, and customers analysis includes:<br>
-Monthly and quarterly breakdowns<br><br>
+<br>
+Monthly and quarterly breakdowns<br>
 <br>
 Regional sales performance<br>
 <br>
@@ -118,12 +121,12 @@ High/medium/low sales classification<br>
 <br>
 Customers active in both years or only one<br>
 <br>
-✔️ All 30 queries are well-structured and use core SQL concepts: JOIN, GROUP BY, HAVING, CASE, UNION, LIMIT.
+<h4>✔️ All 30 queries are well-structured and use core SQL concepts: JOIN, GROUP BY, HAVING, CASE, UNION, LIMIT.</h4>
 <br>
 <h2>📈 Conclusion</h2>
 <br>
 <br>
-This project provides a hands-on introduction to SQL for aspiring data analysts. It covers:
+<b>This project provides a hands-on introduction to SQL for aspiring data analysts. It covers:</b>
 <br>
 Realistic database design<br>
 
