@@ -25,6 +25,7 @@ CREATE DATABASE electronics_sales;<br>
 
 <h4>Table Creation</h4>
 Two tables: sales_2023 and sales_2024, structured as follows:
+
 <br>
 <br>
 <i>sql query:</i><br>
@@ -67,6 +68,7 @@ SELECT COUNT(DISTINCT category) FROM sales_2023;<br>
 <br>
 
 <h4>Null Value Check and Deletion</h4>
+
 <i>sql query:</i><br>
 SELECT * FROM sales_2023<br>
 WHERE product_id IS NULL OR product_name IS NULL OR category IS NULL OR brand IS NULL<br>
@@ -74,6 +76,7 @@ WHERE product_id IS NULL OR product_name IS NULL OR category IS NULL OR brand IS
   OR sale_amount IS NULL OR sale_quantity IS NULL OR discount IS NULL<br>
   OR payment_method IS NULL OR region IS NULL OR store IS NULL OR profit IS NULL;<br>
   <br>
+  
 <i>sql query:</i><br>
 DELETE FROM sales_2023<br>
 WHERE product_id IS NULL OR product_name IS NULL OR category IS NULL OR brand IS NULL<br>
@@ -91,6 +94,7 @@ The following SQL queries address 30 business-focused questions using the data:
 
 <b>Combine sales data from 2023 and 2024</b>
 <br>
+
 <i>sql query:</i><br>
 SELECT * FROM sales_2023<br>
 UNION<br>
@@ -98,18 +102,21 @@ SELECT * FROM sales_2024;<br>
 <br>
 
 <b>Total profit and sales amount by year</b><br>
+
 <i>sql query:</i><br>
 SELECT SUM(profit) FROM sales_2023;<br>
 SELECT SUM(sale_amount) FROM sales_2023;<br>
 <br>
 
 <b>Sales quantity by brand</b><br>
+
 <i>sql query:</i><br>
 SELECT brand, SUM(sale_quantity) FROM sales_2023 GROUP BY brand;<br>
 <br>
 
 <b>Top-selling product</b>
 <br>
+
 <i>sql query:</i><br>
 SELECT product_name, SUM(sale_quantity)<br>
 FROM sales_2023<br>
