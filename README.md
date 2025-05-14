@@ -1,28 +1,30 @@
 📊 SQL Project: Electronics Sales Analysis
+<br>
 📝 Objectives
+<br>
 Database Setup<br>
 Create and populate an electronics sales database using sales data from 2023 and 2024.
-
+<br>
 Data Cleaning<br>
 Identify and remove records with missing or null values.
-
+<br>
 Exploratory Data Analysis (EDA)<br>
 Perform preliminary analysis to understand key metrics and structure of the data.
-
+<br>
 Business Analysis<br>
 Use SQL queries to answer real-world business questions and uncover actionable insights.
-
+<br>
 🗂️ Project Structure
 1. 📦 Database Setup
 Database Creation
-
+<br>
 sql
 Copy
 Edit
 CREATE DATABASE electronics_sales;
 Table Creation<br>
 Two tables: sales_2023 and sales_2024, structured as follows:
-
+<br>
 sql
 Copy
 Edit
@@ -44,28 +46,28 @@ CREATE TABLE sales_2023 (
   profit INT NOT NULL
 );
 Same structure for sales_2024
-
+<br>
 2. 🧹 Data Exploration & Cleaning
 Record Count
-
+<br>
 sql
 Copy
 Edit
 SELECT COUNT(*) FROM sales_2023;
 Unique Customers
-
+<br>
 sql
 Copy
 Edit
 SELECT COUNT(DISTINCT customer_ID) FROM sales_2023;
 Category Count
-
+<br>
 sql
 Copy
 Edit
 SELECT COUNT(DISTINCT category) FROM sales_2023;
 Null Value Check and Deletion
-
+<br>
 sql
 Copy
 Edit
@@ -82,14 +84,15 @@ WHERE product_id IS NULL OR product_name IS NULL OR category IS NULL OR brand IS
   OR customer_ID IS NULL OR customer_name IS NULL OR sale_date IS NULL
   OR sale_amount IS NULL OR sale_quantity IS NULL OR discount IS NULL
   OR payment_method IS NULL OR region IS NULL OR store IS NULL OR profit IS NULL;
+<br>
 Repeat for sales_2024
-
-3. 📊 Data Analysis & Insights
+<br>
+4. 📊 Data Analysis & Insights
 The following SQL queries address 30 business-focused questions using the data:
-
+<br>
 📌 Sample Questions:
 Combine sales data from 2023 and 2024
-
+<br>
 sql
 Copy
 Edit
@@ -97,7 +100,7 @@ SELECT * FROM sales_2023
 UNION
 SELECT * FROM sales_2024;
 Total profit and sales amount by year
-
+<br>
 sql
 Copy
 Edit
@@ -105,13 +108,13 @@ SELECT SUM(profit) FROM sales_2023;
 SELECT SUM(sale_amount) FROM sales_2023;
 -- Repeat for sales_2024
 Sales quantity by brand
-
+<br>
 sql
 Copy
 Edit
 SELECT brand, SUM(sale_quantity) FROM sales_2023 GROUP BY brand;
 Top-selling product
-
+<br>
 sql
 Copy
 Edit
@@ -122,20 +125,21 @@ ORDER BY SUM(sale_quantity) DESC
 LIMIT 1;
 Sales trends, regions, stores, and customers analysis includes:
 Monthly and quarterly breakdowns<br>
-
+<br>
 Regional sales performance<br>
-
+<br>
 Top 10 customers<br>
-
+<br>
 High/medium/low sales classification<br>
-
+<br>
 Customers active in both years or only one<br>
-
+<br>
 ✔️ All 30 queries are well-structured and use core SQL concepts: JOIN, GROUP BY, HAVING, CASE, UNION, LIMIT.
-
+<br>
 📈 Conclusion
+<br>
 This project provides a hands-on introduction to SQL for aspiring data analysts. It covers:
-
+<br>
 Realistic database design<br>
 
 Practical data cleaning<br>
@@ -153,12 +157,12 @@ Regional and seasonal sales patterns<br>
 Top products and stores<br>
 
 Year-over-year comparisons<br>
-
+<br>
 💻 Tools & Technologies
 SQL (MySQL)<br>
 
 MySQL Workbench<br>
-
+<br>
 👨‍💻 Author
 Iqra Izhar<br>
 GitHub • LinkedIn
