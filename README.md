@@ -72,10 +72,8 @@ WHERE product_id IS NULL OR product_name IS NULL OR category IS NULL OR brand IS
   OR customer_ID IS NULL OR customer_name IS NULL OR sale_date IS NULL<br>
   OR sale_amount IS NULL OR sale_quantity IS NULL OR discount IS NULL<br>
   OR payment_method IS NULL OR region IS NULL OR store IS NULL OR profit IS NULL;<br>
-<br>
 <h5>Repeat for sales_2024</h5>
-<br>
-<h3>4. 📊 Data Analysis & Insights</h3>
+<h3>3. 📊 Data Analysis & Insights</h3>
 The following SQL queries address 30 business-focused questions using the data:
 <br>
 <h4>📌 Sample Questions:</h4>
