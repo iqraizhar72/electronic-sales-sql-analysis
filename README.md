@@ -1,26 +1,24 @@
-<h1>📊 SQL Project: Electronics Sales Analysis<h1/>
+<h1>📊 SQL Project: Electronics Sales Analysis</h1>
 <br>
-📝 Objectives
+<h2>📝 Objectives</h2>
 <br>
-Database Setup<br>
+<h3>Database Setup</h3><br>
 Create and populate an electronics sales database using sales data from 2023 and 2024.
 <br>
-Data Cleaning<br>
+<h3>Data Cleaning</h3><br>
 Identify and remove records with missing or null values.
 <br>
-Exploratory Data Analysis (EDA)<br>
+<h3>Exploratory Data Analysis (EDA)</h3><br>
 Perform preliminary analysis to understand key metrics and structure of the data.
 <br>
-Business Analysis<br>
+<h3>Business Analysis</h3><br>
 Use SQL queries to answer real-world business questions and uncover actionable insights.
 <br>
-🗂️ Project Structure
-1. 📦 Database Setup
-Database Creation
+<h2>🗂️ Project Structure</h2>
+<h3>1. 📦 Database Setup</h3>
+<h4>Database Creation</h4>
 <br>
-sql
-Copy
-Edit
+sql query
 CREATE DATABASE electronics_sales;
 Table Creation<br>
 Two tables: sales_2023 and sales_2024, structured as follows:
@@ -136,7 +134,7 @@ Customers active in both years or only one<br>
 <br>
 ✔️ All 30 queries are well-structured and use core SQL concepts: JOIN, GROUP BY, HAVING, CASE, UNION, LIMIT.
 <br>
-📈 Conclusion
+<h2>📈 Conclusion</h2>
 <br>
 This project provides a hands-on introduction to SQL for aspiring data analysts. It covers:
 <br>
@@ -158,11 +156,11 @@ Top products and stores<br>
 
 Year-over-year comparisons<br>
 <br>
-💻 Tools & Technologies
+<h2>💻 Tools & Technologies</h2>
 SQL (MySQL)<br>
 
 MySQL Workbench<br>
 <br>
-👨‍💻 Author
+<h2>👨‍💻 Author</h2>
 Iqra Izhar<br>
 GitHub • LinkedIn
