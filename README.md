@@ -4,7 +4,6 @@ A SQL-based data analysis project of electronic product sales from 2023 and 2024
 <br>
 Objectives
 <br>
-<br>
 1. Set up a Electronics sales database: Create and populate a Electronics sales database with the sales data provided.
 <br>
 2. Data Cleaning: Identify and remove any records with missing or null values.
