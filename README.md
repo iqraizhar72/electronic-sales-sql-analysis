@@ -5,8 +5,14 @@ A SQL-based data analysis project of electronic product sales from 2023 and 2024
 <h2>Objectives</h2>
 <br>
 1. Set up a Electronics sales database:<br> Create and populate a Electronics sales database with the sales data provided.
+<br>
+<br>
 2. Data Cleaning:<br>Identify and remove any records with missing or null values.
+<br>
+<br>
 3. Exploratory Data Analysis (EDA):<br>Perform basic exploratory data analysis to understand the dataset.
+<br>
+<br>
 4. Business Analysis:<br>Use SQL to answer specific business questions and derive insights from the sales data.
 <br>
 <br>
