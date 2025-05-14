@@ -1,32 +1,23 @@
 # Electronics Sales Analysis
 A SQL-based data analysis project of electronic product sales from 2023 and 2024. Includes database creation, data cleaning, exploratory analysis, and business insights using advanced SQL queries.
 <br>
-<br>
 <h2>Objectives</h2>
 <br>
 <h4>1. Set up a Electronics sales database:</h4><br> Create and populate a Electronics sales database with the sales data provided.
 <br>
-<br>
 <h4>2. Data Cleaning:</h4><br>Identify and remove any records with missing or null values.
-<br>
 <br>
 <h4>3. Exploratory Data Analysis (EDA):</h4><br>Perform basic exploratory data analysis to understand the dataset.
 <br>
-<br>
 <h4>4. Business Analysis:</h4><br>Use SQL to answer specific business questions and derive insights from the sales data.
-<br>
 <br>
 <h2>Project Structure</h2>
 <br>
-<br>
 <h3>1. Database Setup</h3>
-<br>
 <br>
 <h4>Database Creation:</h4><br>The project starts by creating a database named ELECTRONICS_SALES.
 <br>
-<br>
 <h4>Table Creation:</h4><br>Two tables named sales_2023,sales_2024 is created to store the sales data of 2 years.
-<br>
 <br>
 The both tables structure includes columns for
 <br>
@@ -58,22 +49,16 @@ store
 <br>
 profit
 <br>
-<br>
 <h3>2. Data Exploration & Cleaning</h3>
-<br>
 <br>
 <h4>• Record Count:</h4><br>Determine the total number of records in the dataset.
 <br>
-<br>
 <h4>• Customer Count:</h4><br>Find out how many unique customers are in the dataset.
-<br>
 <br>
 <h4>• Category Count:</h4><br>Identify all unique product categories in the dataset.
 <br>
-<br>
 <h4>• Null Value Check:</h4><br>Check for any null values in the dataset and delete records with missing data.
 <br>
-<br>  
 <h3>3. Data Analysis & Findings</h3>
 <br> 
 <br>
@@ -81,7 +66,6 @@ profit
 <br>
 <br>
 <h2>Conclusion</h2>
-<br>
 <br>
 This project serves as a comprehensive introduction to SQL for data analysts, covering database setup, data cleaning, exploratory data analysis, and business-driven SQLqueries.The findings from this project can help drive business decisions byunderstanding sales patterns, customer behavior, and product performance.
 
