@@ -132,14 +132,14 @@ Customers active in both years or only one<br>
 <br>
 <br>
 Realistic database design<br>
-
+<br>
 Practical data cleaning<br>
-
+<br>
 Exploratory and descriptive analytics<br>
-
+<br>
 Business-focused query development<br>
 <br>
-The insights generated offer a deeper understanding of:
+The insights generated offer a deeper understanding of:<br>
 <br>
 Customer behavior<br>
 
