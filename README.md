@@ -101,7 +101,6 @@ SELECT * FROM sales_2024;<br>
 <i>sql query:</i><br>
 SELECT SUM(profit) FROM sales_2023;<br>
 SELECT SUM(sale_amount) FROM sales_2023;<br>
--- Repeat for sales_2024<br>
 <br>
 
 <b>Sales quantity by brand</b><br>
@@ -167,4 +166,4 @@ MySQL Workbench<br>
 
 <h2>👨‍💻 Author</h2>
 Iqra Izhar<br>
-GitHub • LinkedIn
+GitHub (https://github.com/iqraizhar72/) • LinkedIn (https://www.linkedin.com/in/iqra-izhar-08b8b8330/)
