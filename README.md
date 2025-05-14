@@ -19,9 +19,12 @@ Project Structure
 <br>
 1. Database Setup
 <br>
+<br>
 Database Creation: The project starts by creating a database named ELECTRONICS_SALES.
 <br>
+<br>
 Table Creation: Two tables named sales_2023,sales_2024 is created to store the sales data of 2 years.
+<br>
 <br>
 The both tables structure includes columns for
 product_id
