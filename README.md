@@ -1,12 +1,14 @@
 <h1>📊 SQL Project: Electronics Sales Analysis</h1>
+
 <h2>📝 Objectives</h2>
-<h3>Database Setup</h3><br>
+
+<h3>Database Setup</h3>
 Create and populate an electronics sales database using sales data from 2023 and 2024.
-<h3>Data Cleaning</h3><br>
+<h3>Data Cleaning</h3>
 Identify and remove records with missing or null values.
-<h3>Exploratory Data Analysis (EDA)</h3><br>
+<h3>Exploratory Data Analysis (EDA)</h3>
 Perform preliminary analysis to understand key metrics and structure of the data.
-<h3>Business Analysis</h3><br>
+<h3>Business Analysis</h3>
 Use SQL queries to answer real-world business questions and uncover actionable insights.
 <h2>🗂️ Project Structure</h2>
 <h3>1. 📦 Database Setup</h3>
@@ -109,7 +111,7 @@ GROUP BY product_name<br>
 ORDER BY SUM(sale_quantity) DESC<br>
 LIMIT 1;<br>
 <br>
-Sales trends, regions, stores, and customers analysis includes:<br>
+<h4>Sales trends, regions, stores, and customers analysis includes:</h4><br>
 <br>
 Monthly and quarterly breakdowns<br>
 <br>
@@ -127,6 +129,7 @@ Customers active in both years or only one<br>
 <br>
 <br>
 <b>This project provides a hands-on introduction to SQL for aspiring data analysts. It covers:</b>
+<br>
 <br>
 Realistic database design<br>
 
