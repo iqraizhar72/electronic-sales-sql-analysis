@@ -59,7 +59,7 @@ store
 profit
 <br>
 <br>
-<h3></h3>2. Data Exploration & Cleaning</h3>
+<h3>2. Data Exploration & Cleaning</h3>
 <br>
 <br>
 • Record Count:<br>Determine the total number of records in the dataset.
@@ -75,7 +75,7 @@ profit
 <br>
 <br>  
 <h3>3. Data Analysis & Findings</h3>
-<br>
+<br> 
 <br>
 
 <br>
@@ -83,7 +83,7 @@ profit
 <h2>Conclusion</h2>
 <br>
 <br>
-This project serves as a comprehensive introduction to SQL for data analysts, coveringdatabase setup, data cleaning, exploratory data analysis, and business-driven SQLqueries.The findings from this project can help drive business decisions byunderstanding sales patterns, customer behavior, and product performance.
+This project serves as a comprehensive introduction to SQL for data analysts, covering database setup, data cleaning, exploratory data analysis, and business-driven SQLqueries.The findings from this project can help drive business decisions byunderstanding sales patterns, customer behavior, and product performance.
 
 
 
