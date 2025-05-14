@@ -74,23 +74,31 @@ WHERE product_id IS NULL OR product_name IS NULL OR category IS NULL OR brand IS
 The following SQL queries address 30 business-focused questions using the data:
 <br>
 <h4>📌 Sample Questions:</h4>
+
 Combine sales data from 2023 and 2024
+<br>
 <br>
 <i>sql query:</i><br>
 SELECT * FROM sales_2023<br>
 UNION<br>
 SELECT * FROM sales_2024;<br>
+
 Total profit and sales amount by year<br>
+
 <br>
 <i>sql query:</i><br>
 SELECT SUM(profit) FROM sales_2023;<br>
 SELECT SUM(sale_amount) FROM sales_2023;<br>
 -- Repeat for sales_2024<br>
+<br>
 Sales quantity by brand<br>
+
 <br>
 <i>sql query:</i><br>
 SELECT brand, SUM(sale_quantity) FROM sales_2023 GROUP BY brand;<br>
+<br>
 Top-selling product<br>
+
 <br>
 <i>sql query:</i><br>
 SELECT product_name, SUM(sale_quantity)<br>
@@ -98,6 +106,7 @@ FROM sales_2023<br>
 GROUP BY product_name<br>
 ORDER BY SUM(sale_quantity) DESC<br>
 LIMIT 1;<br>
+<br>
 Sales trends, regions, stores, and customers analysis includes:<br>
 Monthly and quarterly breakdowns<br><br>
 <br>
@@ -112,6 +121,7 @@ Customers active in both years or only one<br>
 ✔️ All 30 queries are well-structured and use core SQL concepts: JOIN, GROUP BY, HAVING, CASE, UNION, LIMIT.
 <br>
 <h2>📈 Conclusion</h2>
+<br>
 <br>
 This project provides a hands-on introduction to SQL for aspiring data analysts. It covers:
 <br>
