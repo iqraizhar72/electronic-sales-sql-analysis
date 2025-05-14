@@ -1,27 +1,24 @@
-# 📊 SQL Project: Electronics Sales Analysis
+📊 SQL Project: Electronics Sales Analysis
+📝 Objectives
+Database Setup
+Create and populate an electronics sales database using sales data from 2023 and 2024.
 
-## 📝 Objectives
+Data Cleaning
+Identify and remove records with missing or null values.
 
-1. **Database Setup**  
-   Create and populate an electronics sales database using sales data from 2023 and 2024.
+Exploratory Data Analysis (EDA)
+Perform preliminary analysis to understand key metrics and structure of the data.
 
-2. **Data Cleaning**  
-   Identify and remove records with missing or null values.
+Business Analysis
+Use SQL queries to answer real-world business questions and uncover actionable insights.
 
-3. **Exploratory Data Analysis (EDA)**  
-   Perform preliminary analysis to understand key metrics and structure of the data.
+🗂️ Project Structure
+1. 📦 Database Setup
+Database Creation
 
-4. **Business Analysis**  
-   Use SQL queries to answer real-world business questions and uncover actionable insights.
-
----
-
-## 🗂️ Project Structure
-
-### 1. 📦 Database Setup
-
-- **Database Creation**
-```sql
+sql
+Copy
+Edit
 CREATE DATABASE electronics_sales;
 Table Creation
 Two tables: sales_2023 and sales_2024, structured as follows:
@@ -46,7 +43,8 @@ CREATE TABLE sales_2023 (
   store VARCHAR(50) NOT NULL,
   profit INT NOT NULL
 );
--- Same structure for sales_2024
+Same structure for sales_2024
+
 2. 🧹 Data Exploration & Cleaning
 Record Count
 
@@ -76,10 +74,16 @@ WHERE product_id IS NULL OR product_name IS NULL OR category IS NULL OR brand IS
   OR customer_ID IS NULL OR customer_name IS NULL OR sale_date IS NULL
   OR sale_amount IS NULL OR sale_quantity IS NULL OR discount IS NULL
   OR payment_method IS NULL OR region IS NULL OR store IS NULL OR profit IS NULL;
-
+sql
+Copy
+Edit
 DELETE FROM sales_2023
-WHERE [same conditions as above];
--- Repeat for sales_2024
+WHERE product_id IS NULL OR product_name IS NULL OR category IS NULL OR brand IS NULL
+  OR customer_ID IS NULL OR customer_name IS NULL OR sale_date IS NULL
+  OR sale_amount IS NULL OR sale_quantity IS NULL OR discount IS NULL
+  OR payment_method IS NULL OR region IS NULL OR store IS NULL OR profit IS NULL;
+Repeat for sales_2024
+
 3. 📊 Data Analysis & Insights
 The following SQL queries address 30 business-focused questions using the data:
 
@@ -116,9 +120,7 @@ FROM sales_2023
 GROUP BY product_name
 ORDER BY SUM(sale_quantity) DESC
 LIMIT 1;
-Sales trends, regions, stores, and customers analysis
-Includes:
-
+Sales trends, regions, stores, and customers analysis includes:
 Monthly and quarterly breakdowns
 
 Regional sales performance
@@ -159,4 +161,4 @@ MySQL Workbench
 
 👨‍💻 Author
 Iqra Izhar
-[GitHub] (https://www.linkedin.com/in/iqra-izhar-08b8b8330) • [LinkedIn] (https://github.com/iqraizhar72)
+[GitHub] () • [LinkedIn] ()
