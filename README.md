@@ -1,15 +1,15 @@
 📊 SQL Project: Electronics Sales Analysis
 📝 Objectives
-Database Setup
+Database Setup<br>
 Create and populate an electronics sales database using sales data from 2023 and 2024.
 
-Data Cleaning
+Data Cleaning<br>
 Identify and remove records with missing or null values.
 
-Exploratory Data Analysis (EDA)
+Exploratory Data Analysis (EDA)<br>
 Perform preliminary analysis to understand key metrics and structure of the data.
 
-Business Analysis
+Business Analysis<br>
 Use SQL queries to answer real-world business questions and uncover actionable insights.
 
 🗂️ Project Structure
@@ -20,7 +20,7 @@ sql
 Copy
 Edit
 CREATE DATABASE electronics_sales;
-Table Creation
+Table Creation<br>
 Two tables: sales_2023 and sales_2024, structured as follows:
 
 sql
@@ -121,44 +121,44 @@ GROUP BY product_name
 ORDER BY SUM(sale_quantity) DESC
 LIMIT 1;
 Sales trends, regions, stores, and customers analysis includes:
-Monthly and quarterly breakdowns
+Monthly and quarterly breakdowns<br>
 
-Regional sales performance
+Regional sales performance<br>
 
-Top 10 customers
+Top 10 customers<br>
 
-High/medium/low sales classification
+High/medium/low sales classification<br>
 
-Customers active in both years or only one
+Customers active in both years or only one<br>
 
 ✔️ All 30 queries are well-structured and use core SQL concepts: JOIN, GROUP BY, HAVING, CASE, UNION, LIMIT.
 
 📈 Conclusion
 This project provides a hands-on introduction to SQL for aspiring data analysts. It covers:
 
-Realistic database design
+Realistic database design<br>
 
-Practical data cleaning
+Practical data cleaning<br>
 
-Exploratory and descriptive analytics
+Exploratory and descriptive analytics<br>
 
-Business-focused query development
+Business-focused query development<br>
 
 The insights generated offer a deeper understanding of:
 
-Customer behavior
+Customer behavior<br>
 
-Regional and seasonal sales patterns
+Regional and seasonal sales patterns<br>
 
-Top products and stores
+Top products and stores<br>
 
-Year-over-year comparisons
+Year-over-year comparisons<br>
 
 💻 Tools & Technologies
-SQL (MySQL)
+SQL (MySQL)<br>
 
-MySQL Workbench
+MySQL Workbench<br>
 
 👨‍💻 Author
-Iqra Izhar
-[GitHub] () • [LinkedIn] ()
+Iqra Izhar<br>
+GitHub • LinkedIn
