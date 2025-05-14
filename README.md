@@ -43,22 +43,18 @@ CREATE TABLE sales_2023 (<br>
 <br>
 <h3>2. 🧹 Data Exploration & Cleaning</h3>
 <h4>Record Count</h4>
-<br>
 <i>sql query:</i><br>
 SELECT COUNT(*) FROM sales_2023;<br>
 <br>
 <h4>Unique Customers</h4>
-<br>
 <i>sql query:</i><br>
 SELECT COUNT(DISTINCT customer_ID) FROM sales_2023;<br>
 <br>
 <h4>Category Count</h4>
-<br>
 <i>sql query:</i><br>
 SELECT COUNT(DISTINCT category) FROM sales_2023;<br>
 <br>
 <h4>Null Value Check and Deletion</h4>
-<br>
 <i>sql query:</i><br>
 SELECT * FROM sales_2023<br>
 WHERE product_id IS NULL OR product_name IS NULL OR category IS NULL OR brand IS NULL<br>
