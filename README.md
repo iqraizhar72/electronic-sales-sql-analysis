@@ -126,8 +126,6 @@ Customers active in both years or only one<br>
 <h4>✔️ All 30 queries are well-structured and use core SQL concepts: JOIN, GROUP BY, HAVING, CASE, UNION, LIMIT.</h4>
 <br>
 <h2>📈 Conclusion</h2>
-<br>
-<br>
 <b>This project provides a hands-on introduction to SQL for aspiring data analysts. It covers:</b>
 <br>
 <br>
