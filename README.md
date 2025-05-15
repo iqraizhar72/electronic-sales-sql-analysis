@@ -129,10 +129,10 @@ GROUP BY brand;
 <br>
 
 ```sql
-SELECT product_name, SUM(sale_quantity)<br>
-FROM sales_2023<br>
-GROUP BY product_name<br>
-ORDER BY SUM(sale_quantity) DESC<br>
+SELECT product_name, SUM(sale_quantity)
+FROM sales_2023
+GROUP BY product_name
+ORDER BY SUM(sale_quantity) DESC
 LIMIT 1;
 ```   
 <br>
