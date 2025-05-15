@@ -15,12 +15,12 @@
 
 ### 1. 📦 Database Setup
 
-#### Database Creation
+#### -Database Creation
 ```sql
 CREATE DATABASE electronics_sales;
 ```
   
-#### Table Creation
+#### -Table Creation
 Two tables: sales_2023 and sales_2024, structured as follows:
 <br>
 ```sql
@@ -48,22 +48,22 @@ CREATE TABLE sales_2023 (<br>
 
 ### 2. 🧹 Data Exploration & Cleaning
 
-#### Record Count
+#### -Record Count
 ```sql
 SELECT COUNT(*) FROM sales_2023;
 ``` 
 
-#### Unique Customers
+#### -Unique Customers
 ```sql
 SELECT COUNT(DISTINCT customer_ID) FROM sales_2023;
 ```  
 
-#### Category Count
+#### -Category Count
 ```sql
 SELECT COUNT(DISTINCT category) FROM sales_2023;
 ```
 
-#### Null Value Check and Deletion
+#### -Null Value Check and Deletion
 
 ```sql
 SELECT * FROM sales_2023<br>
@@ -92,7 +92,7 @@ The following SQL queries address 30 business-focused questions using the data:
 
 #### 📌 Sample Questions:
 
-**Combine sales data from 2023 and 2024**
+**-Combine sales data from 2023 and 2024**
 <br>
 
 ```sql
@@ -102,7 +102,7 @@ SELECT * FROM sales_2024;
 ```   
 <br>
 
-**Total profit and sales amount by year**<br>
+**-Total profit and sales amount by year**<br>
 
 ```sql
 SELECT SUM(profit) FROM sales_2023;<br>
@@ -110,14 +110,14 @@ SELECT SUM(sale_amount) FROM sales_2023;
 ```  
 <br>
 
-**Sales quantity by brand**<br>
+**-Sales quantity by brand**<br>
 
 ```sql
 SELECT brand, SUM(sale_quantity) FROM sales_2023 GROUP BY brand;
 ```   
 <br>
 
-**Top-selling product**
+**-Top-selling product**
 <br>
 
 ```sql
