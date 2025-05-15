@@ -176,10 +176,10 @@ Year-over-year comparisons<br>
 <br>
 
 ## 💻 Tools & Technologies
-SQL (MySQL)<br>
-MySQL Workbench<br>
+-SQL (MySQL)<br>
+-MySQL Workbench<br>
 <br>
 
 ## 👨‍💻 Author
-Iqra Izhar<br>
+**Iqra Izhar**  
 [GitHub](https://github.com/iqraizhar72/) • [LinkedIn](https://www.linkedin.com/in/iqra-izhar-08b8b8330/)
