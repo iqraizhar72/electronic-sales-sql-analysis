@@ -1,4 +1,4 @@
-<h1>📊 SQL Project: Electronics Sales Analysis</h1>
+# 📊 SQL Project: Electronics Sales Analysis
 
 <h2>📝 Objectives</h2>
 
