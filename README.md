@@ -88,6 +88,7 @@ WHERE product_id IS NULL OR product_name IS NULL OR category IS NULL OR brand IS
 
 ##### Repeat for sales_2024
 <br>
+
 ### 3. 📊 Data Analysis & Insights
 The following SQL queries address 30 business-focused questions using the data:
 <br>
@@ -179,6 +180,6 @@ SQL (MySQL)<br>
 MySQL Workbench<br>
 <br>
 
-##👨‍💻 Author
+## 👨‍💻 Author
 Iqra Izhar<br>
 [GitHub] (https://github.com/iqraizhar72/) • [LinkedIn] (https://www.linkedin.com/in/iqra-izhar-08b8b8330/)
