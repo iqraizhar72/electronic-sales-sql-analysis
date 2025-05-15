@@ -3,17 +3,11 @@
 
 ## 📝 Objectives
 
-### Database Setup
-Create and populate an electronics sales database using sales data from 2023 and 2024.
+- **Database Setup**: Create and populate an electronics sales database using sales data from 2023 and 2024.
+- **Data Cleaning**: Identify and remove records with missing or null values.
+- **Exploratory Data Analysis (EDA)**: Perform preliminary analysis to understand key metrics and structure of the data.
+- **Business Analysis**: Use SQL queries to answer real-world business questions and uncover actionable insights.
 
-### Data Cleaning
-Identify and remove records with missing or null values.
-
-### Exploratory Data Analysis (EDA)
-Perform preliminary analysis to understand key metrics and structure of the data.
-
-### Business Analysis
-Use SQL queries to answer real-world business questions and uncover actionable insights.
 <br>
 <br>
 ## 🗂️ Project Structure
@@ -137,15 +131,15 @@ LIMIT 1;
 #### Sales trends, regions, stores, and customers analysis includes:
 <br>
 
-Monthly and quarterly breakdowns<br>
+-Monthly and quarterly breakdowns<br>
 <br>
-Regional sales performance<br>
+-Regional sales performance<br>
 <br>
-Top 10 customers<br>
+-Top 10 customers<br>
 <br>
-High/medium/low sales classification<br>
+-High/medium/low sales classification<br>
 <br>
-Customers active in both years or only one<br>
+-Customers active in both years or only one<br>
 <br>
 
 #### ✔️ All 30 queries are well-structured and use core SQL concepts: JOIN, GROUP BY, HAVING, CASE, UNION, LIMIT.
@@ -156,23 +150,23 @@ Customers active in both years or only one<br>
 **This project provides a hands-on introduction to SQL for aspiring data analysts. It covers:**
 <br>
 <br>
-Realistic database design<br>
+-Realistic database design<br>
 <br>
-Practical data cleaning<br>
+-Practical data cleaning<br>
 <br>
-Exploratory and descriptive analytics<br>
+-Exploratory and descriptive analytics<br>
 <br>
-Business-focused query development<br>
+-Business-focused query development<br>
 <br>
 **The insights generated offer a deeper understanding of:**<br>
 <br>
-Customer behavior<br>
+-Customer behavior<br>
 <br>
-Regional and seasonal sales patterns<br>
+-Regional and seasonal sales patterns<br>
 <br>
-Top products and stores<br>
+-Top products and stores<br>
 <br>
-Year-over-year comparisons<br>
+-Year-over-year comparisons<br>
 <br>
 
 ## 💻 Tools & Technologies
