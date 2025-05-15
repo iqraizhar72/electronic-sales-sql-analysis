@@ -1,9 +1,11 @@
 #----------------------------------------------------------------------------------SQL Project--------------------------------------------------------------------------------------
 
+# creating Database
+
 create database electronics_sales;
 use electronics_sales;
 
-drop table sales_2023;
+# creating tables
 
 create table sales_2023(
 sale_ID int auto_increment primary key,
@@ -46,6 +48,8 @@ profit int not null
 
 select * from sales_2024;
 desc sales_2024;
+
+# inserting data into tables
 
 INSERT INTO sales_2023 (
     product_id, product_name, category, brand, customer_ID, customer_name, sale_date, 
