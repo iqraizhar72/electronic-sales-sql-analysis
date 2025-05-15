@@ -154,5 +154,4 @@ SQL (MySQL)
 MySQL Workbench
 
 👨‍💻 Author
-Iqra Izhar
 [GitHub](https://github.com/iqraizhar72/) • [LinkedIn](https://www.linkedin.com/in/iqra-izhar-08b8b8330/)
