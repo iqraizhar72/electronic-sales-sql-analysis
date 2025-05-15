@@ -2,7 +2,6 @@
 <br>
 
 ## 📝 Objectives
-<br>
 
 ### Database Setup
 Create and populate an electronics sales database using sales data from 2023 and 2024.
