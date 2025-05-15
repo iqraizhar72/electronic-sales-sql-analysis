@@ -1,5 +1,5 @@
 # 📊 SQL Project: Electronics Sales Analysis
-
+<br>
 ## 📝 Objectives
 
 ### Database Setup
@@ -13,20 +13,20 @@ Perform preliminary analysis to understand key metrics and structure of the data
 
 ### Business Analysis
 Use SQL queries to answer real-world business questions and uncover actionable insights.
-
+<br>
 ## 🗂️ Project Structure
 
 ### 1. 📦 Database Setup
 
 #### Database Creation
-<pre> '''sql
+<pre> ```sql
 CREATE DATABASE electronics_sales;
-'''</pre> 
+```</pre> 
   
 #### Table Creation
 Two tables: sales_2023 and sales_2024, structured as follows:
 <br>
-<pre> '''sql
+<pre> ```sql
 CREATE TABLE sales_2023 (<br>
   sale_ID INT AUTO_INCREMENT PRIMARY KEY,<br>
   product_id INT NOT NULL,<br>
@@ -44,7 +44,7 @@ CREATE TABLE sales_2023 (<br>
   store VARCHAR(50) NOT NULL,<br>
   profit INT NOT NULL<br>
 );
-'''</pre> 
+```</pre> 
 
 ##### Same structure for sales_2024
 <br>
@@ -52,38 +52,38 @@ CREATE TABLE sales_2023 (<br>
 ### 2. 🧹 Data Exploration & Cleaning
 
 #### Record Count
-<pre> '''sql
+<pre> ```sql
 SELECT COUNT(*) FROM sales_2023;
-'''</pre> 
+```</pre> 
 
 #### Unique Customers
-<pre> '''sql
+<pre> ```sql
 SELECT COUNT(DISTINCT customer_ID) FROM sales_2023;
-'''</pre>   
+```</pre>   
 
 #### Category Count
-<pre> '''sql
+<pre> ```sql
 SELECT COUNT(DISTINCT category) FROM sales_2023;
-'''</pre>   
+```</pre>   
 
 #### Null Value Check and Deletion
 
-<pre> '''sql
+<pre> ```sql
 SELECT * FROM sales_2023<br>
 WHERE product_id IS NULL OR product_name IS NULL OR category IS NULL OR brand IS NULL<br>
   OR customer_ID IS NULL OR customer_name IS NULL OR sale_date IS NULL<br>
   OR sale_amount IS NULL OR sale_quantity IS NULL OR discount IS NULL<br>
   OR payment_method IS NULL OR region IS NULL OR store IS NULL OR profit IS NULL;
-'''</pre>   
+```</pre>   
 <br>
   
-<pre> '''sql
+<pre> ```sql
 DELETE FROM sales_2023<br>
 WHERE product_id IS NULL OR product_name IS NULL OR category IS NULL OR brand IS NULL<br>
   OR customer_ID IS NULL OR customer_name IS NULL OR sale_date IS NULL<br>
   OR sale_amount IS NULL OR sale_quantity IS NULL OR discount IS NULL<br>
   OR payment_method IS NULL OR region IS NULL OR store IS NULL OR profit IS NULL;
-'''</pre>   
+```</pre>   
 
 
 ##### Repeat for sales_2024
@@ -98,38 +98,38 @@ The following SQL queries address 30 business-focused questions using the data:
 **Combine sales data from 2023 and 2024**
 <br>
 
-<pre> '''sql
+<pre> ```sql
 SELECT * FROM sales_2023<br>
 UNION<br>
 SELECT * FROM sales_2024;
-'''</pre>   
+```</pre>   
 <br>
 
 **Total profit and sales amount by year**<br>
 
-<pre> '''sql
+<pre> ```sql
 SELECT SUM(profit) FROM sales_2023;<br>
 SELECT SUM(sale_amount) FROM sales_2023;
-'''</pre>   
+```</pre>   
 <br>
 
 **Sales quantity by brand**<br>
 
-<pre> '''sql
+<pre> ```sql
 SELECT brand, SUM(sale_quantity) FROM sales_2023 GROUP BY brand;
-  '''</pre>   
+```</pre>   
 <br>
 
 **Top-selling product**
 <br>
 
-<pre> '''sql
+<pre> ```sql
 SELECT product_name, SUM(sale_quantity)<br>
 FROM sales_2023<br>
 GROUP BY product_name<br>
 ORDER BY SUM(sale_quantity) DESC<br>
 LIMIT 1;
-'''</pre>   
+```</pre>   
 <br>
 
 <br>
@@ -182,4 +182,4 @@ MySQL Workbench<br>
 
 ## 👨‍💻 Author
 Iqra Izhar<br>
-[GitHub] (https://github.com/iqraizhar72/) • [LinkedIn] (https://www.linkedin.com/in/iqra-izhar-08b8b8330/)
+[GitHub](https://github.com/iqraizhar72/) • [LinkedIn](https://www.linkedin.com/in/iqra-izhar-08b8b8330/)
