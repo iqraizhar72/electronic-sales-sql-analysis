@@ -24,22 +24,22 @@ CREATE DATABASE electronics_sales;
 Two tables: sales_2023 and sales_2024, structured as follows:
 <br>
 ```sql
-CREATE TABLE sales_2023 (<br>
-  sale_ID INT AUTO_INCREMENT PRIMARY KEY,<br>
-  product_id INT NOT NULL,<br>
-  product_name VARCHAR(50) NOT NULL,<br>
-  category VARCHAR(50) NOT NULL,<br>
-  brand VARCHAR(50) NOT NULL,<br>
-  customer_ID INT NOT NULL,<br>
-  customer_name VARCHAR(50) NOT NULL,<br>
-  sale_date DATE NOT NULL,<br>
-  sale_amount INT NOT NULL,<br>
-  sale_quantity INT DEFAULT 1 NOT NULL,<br>
-  discount INT NOT NULL,<br>
-  payment_method VARCHAR(50) NOT NULL,<br>
-  region VARCHAR(50) NOT NULL,<br>
-  store VARCHAR(50) NOT NULL,<br>
-  profit INT NOT NULL<br>
+CREATE TABLE sales_2023 (
+  sale_ID INT AUTO_INCREMENT PRIMARY KEY,
+  product_id INT NOT NULL,
+  product_name VARCHAR(50) NOT NULL,
+  category VARCHAR(50) NOT NULL,
+  brand VARCHAR(50) NOT NULL,
+  customer_ID INT NOT NULL,
+  customer_name VARCHAR(50) NOT NULL,
+  sale_date DATE NOT NULL,
+  sale_amount INT NOT NULL,
+  sale_quantity INT DEFAULT 1 NOT NULL,
+  discount INT NOT NULL,
+  payment_method VARCHAR(50) NOT NULL,
+  region VARCHAR(50) NOT NULL,
+  store VARCHAR(50) NOT NULL,
+  profit INT NOT NULL
 );
 ```
 
@@ -50,35 +50,38 @@ CREATE TABLE sales_2023 (<br>
 
 #### -Record Count
 ```sql
-SELECT COUNT(*) FROM sales_2023;
+SELECT COUNT(*)
+FROM sales_2023;
 ``` 
 
 #### -Unique Customers
 ```sql
-SELECT COUNT(DISTINCT customer_ID) FROM sales_2023;
+SELECT COUNT(DISTINCT customer_ID)
+FROM sales_2023;
 ```  
 
 #### -Category Count
 ```sql
-SELECT COUNT(DISTINCT category) FROM sales_2023;
+SELECT COUNT(DISTINCT category)
+FROM sales_2023;
 ```
 
 #### -Null Value Check and Deletion
 
 ```sql
 SELECT * FROM sales_2023<br>
-WHERE product_id IS NULL OR product_name IS NULL OR category IS NULL OR brand IS NULL<br>
-  OR customer_ID IS NULL OR customer_name IS NULL OR sale_date IS NULL<br>
-  OR sale_amount IS NULL OR sale_quantity IS NULL OR discount IS NULL<br>
+WHERE product_id IS NULL OR product_name IS NULL OR category IS NULL OR brand IS NULL
+  OR customer_ID IS NULL OR customer_name IS NULL OR sale_date IS NULL
+  OR sale_amount IS NULL OR sale_quantity IS NULL OR discount IS NULL
   OR payment_method IS NULL OR region IS NULL OR store IS NULL OR profit IS NULL;
 ```  
 <br>
   
 ```sql
 DELETE FROM sales_2023<br>
-WHERE product_id IS NULL OR product_name IS NULL OR category IS NULL OR brand IS NULL<br>
-  OR customer_ID IS NULL OR customer_name IS NULL OR sale_date IS NULL<br>
-  OR sale_amount IS NULL OR sale_quantity IS NULL OR discount IS NULL<br>
+WHERE product_id IS NULL OR product_name IS NULL OR category IS NULL OR brand IS NULL
+  OR customer_ID IS NULL OR customer_name IS NULL OR sale_date IS NULL
+  OR sale_amount IS NULL OR sale_quantity IS NULL OR discount IS NULL
   OR payment_method IS NULL OR region IS NULL OR store IS NULL OR profit IS NULL;
 ```
 
@@ -96,8 +99,8 @@ The following SQL queries address 30 business-focused questions using the data:
 <br>
 
 ```sql
-SELECT * FROM sales_2023<br>
-UNION<br>
+SELECT * FROM sales_2023
+UNION
 SELECT * FROM sales_2024;
 ```   
 <br>
@@ -105,15 +108,20 @@ SELECT * FROM sales_2024;
 **-Total profit and sales amount by year**<br>
 
 ```sql
-SELECT SUM(profit) FROM sales_2023;<br>
-SELECT SUM(sale_amount) FROM sales_2023;
+SELECT SUM(profit)
+FROM sales_2023;
+
+SELECT SUM(sale_amount)
+FROM sales_2023;
 ```  
 <br>
 
 **-Sales quantity by brand**<br>
 
 ```sql
-SELECT brand, SUM(sale_quantity) FROM sales_2023 GROUP BY brand;
+SELECT brand, SUM(sale_quantity)
+FROM sales_2023
+GROUP BY brand;
 ```   
 <br>
 
