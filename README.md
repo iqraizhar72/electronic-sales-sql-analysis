@@ -25,8 +25,6 @@ CREATE DATABASE electronics_sales;
   
 #### Table Creation
 Two tables: sales_2023 and sales_2024, structured as follows:
-
-<br>
 <br>
 <pre> '''sql
 CREATE TABLE sales_2023 (<br>
@@ -62,14 +60,13 @@ SELECT COUNT(*) FROM sales_2023;
 <pre> '''sql
 SELECT COUNT(DISTINCT customer_ID) FROM sales_2023;
 '''</pre>   
-<br>
 
 #### Category Count
 <pre> '''sql
 SELECT COUNT(DISTINCT category) FROM sales_2023;
 '''</pre>   
-<br>
-####Null Value Check and Deletion
+
+#### Null Value Check and Deletion
 
 <pre> '''sql
 SELECT * FROM sales_2023<br>
@@ -87,10 +84,10 @@ WHERE product_id IS NULL OR product_name IS NULL OR category IS NULL OR brand IS
   OR sale_amount IS NULL OR sale_quantity IS NULL OR discount IS NULL<br>
   OR payment_method IS NULL OR region IS NULL OR store IS NULL OR profit IS NULL;
 '''</pre>   
-<br>  
+
 
 ##### Repeat for sales_2024
-
+<br>
 ### 3. 📊 Data Analysis & Insights
 The following SQL queries address 30 business-focused questions using the data:
 <br>
@@ -121,6 +118,7 @@ SELECT SUM(sale_amount) FROM sales_2023;
 SELECT brand, SUM(sale_quantity) FROM sales_2023 GROUP BY brand;
   '''</pre>   
 <br>
+
 **Top-selling product**
 <br>
 
@@ -134,6 +132,7 @@ LIMIT 1;
 <br>
 
 <br>
+
 #### Sales trends, regions, stores, and customers analysis includes:
 <br>
 
