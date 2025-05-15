@@ -1,5 +1,6 @@
 # 📊 SQL Project: Electronics Sales Analysis
 <br>
+
 ## 📝 Objectives
 
 ### Database Setup
@@ -15,6 +16,7 @@ Perform preliminary analysis to understand key metrics and structure of the data
 Use SQL queries to answer real-world business questions and uncover actionable insights.
 <br>
 ## 🗂️ Project Structure
+<br>
 
 ### 1. 📦 Database Setup
 
@@ -130,8 +132,6 @@ GROUP BY product_name<br>
 ORDER BY SUM(sale_quantity) DESC<br>
 LIMIT 1;
 ```</pre>   
-<br>
-
 <br>
 
 #### Sales trends, regions, stores, and customers analysis includes:
