@@ -2,7 +2,7 @@
 <br>
 
 ## 📝 Objectives
-
+<br>
 ### Database Setup
 Create and populate an electronics sales database using sales data from 2023 and 2024.
 
@@ -15,8 +15,8 @@ Perform preliminary analysis to understand key metrics and structure of the data
 ### Business Analysis
 Use SQL queries to answer real-world business questions and uncover actionable insights.
 <br>
-## 🗂️ Project Structure
 <br>
+## 🗂️ Project Structure
 
 ### 1. 📦 Database Setup
 
