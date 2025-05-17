@@ -184,5 +184,8 @@ LIMIT 1;
 <br>
 
 ## 👨‍💻 Author
-**Iqra Izhar**  
-[GitHub](https://github.com/iqraizhar72/) • [LinkedIn](https://www.linkedin.com/in/iqra-izhar-08b8b8330/)
+**IqraIzhar**
+- **LinkedIn:** [linkedin.com/in/iqra-izhar-08b8b8330](https://www.linkedin.com/in/iqra-izhar-08b8b8330)  
+- **GitHub:** [github.com/iqraizhar72](https://github.com/iqraizhar72)
+- **Email:** [iqraizhar72@gmail.com](mailto:iqraizhar72@gmail.com)
+
